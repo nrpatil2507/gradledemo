@@ -1,0 +1,41 @@
+
+apply plugin:"java"
+apply plugin:"application"
+
+allprojects {
+  //task hello << { task -> println "I'm $task.project.name" }
+}
+subprojects {
+  apply plugin: "java"
+ 
+}
+repositories {
+      mavenCentral()
+  }
+
+
+project(':demo'){
+	mainClassName ='demo.Main'
+}
+
+
+/*
+project(':common'){
+	mainClassName ='common.Common'
+}
+
+
+project(':app'){
+	mainClassName='app.app'
+}
+
+project(':api'){
+	mainClassName='api.api'
+}
+
+*/
+
+
+
+
+
