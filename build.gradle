@@ -1,12 +1,12 @@
 
-apply plugin:"java"
-apply plugin:"application"
-
 allprojects {
-  //task hello << { task -> println "I'm $task.project.name" }
+  task hello  {
+	  doLast{
+		  task -> println "I'm $task.project.name" }
+  }
 }
 subprojects {
-  apply plugin: "java"
+  apply plugin: "application"
  
 }
 repositories {
@@ -19,7 +19,7 @@ project(':demo'){
 }
 
 
-/*
+
 project(':common'){
 	mainClassName ='common.Common'
 }
@@ -33,7 +33,6 @@ project(':api'){
 	mainClassName='api.api'
 }
 
-*/
 
 
 

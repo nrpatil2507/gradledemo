@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\api.jar;%APP_HOME%\lib\common.jar;%APP_HOME%\lib\commons-lang3-3.4.jar;%APP_HOME%\lib\log4j-core-2.6.2.jar;%APP_HOME%\lib\log4j-api-2.6.2.jar
+set CLASSPATH=%APP_HOME%\lib\api.jar
 
 @rem Execute api
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %API_OPTS%  -classpath "%CLASSPATH%" api.api %CMD_LINE_ARGS%

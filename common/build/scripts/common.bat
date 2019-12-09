@@ -63,10 +63,10 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\common.jar;%APP_HOME%\lib\commons-lang3-3.4.jar
+set CLASSPATH=%APP_HOME%\lib\common.jar
 
 @rem Execute common
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %COMMON_OPTS%  -classpath "%CLASSPATH%" common.common %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %COMMON_OPTS%  -classpath "%CLASSPATH%" common.Common %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell
